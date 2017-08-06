@@ -1,4 +1,4 @@
-package com.mjduan.project.chapter20_abstract
+package com.mjduan.project.chapter20_abstract.example1
 
 /**
   * Hans 2017-08-06 16:45
