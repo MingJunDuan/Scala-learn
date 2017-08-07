@@ -10,6 +10,7 @@ object Example1 {
       method2()
       method3()
       method4()
+      method5()
    }
 
    private def method4() = {
@@ -52,6 +53,12 @@ object Example1 {
       }
 
       printStrings("one", "two", "three", "four")
+   }
+
+   def method5(): Unit ={
+      var inc=(x:Int) => x+1
+
+      println(inc(5))
    }
 
 
