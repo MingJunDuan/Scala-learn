@@ -9,6 +9,16 @@ object Example1 {
       method1()
       method2()
       method3()
+      method4()
+   }
+
+   private def method4() = {
+      println("\nmethod4")
+      def apply(f: Int => String, i: Int) = f(i)
+
+      def layout[A](x: A) = "[" + x.toString + "]"
+
+      println(apply(layout,10))
    }
 
    def method3() = {
