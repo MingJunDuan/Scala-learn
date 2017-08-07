@@ -11,6 +11,7 @@ object Example1 {
       method3()
       method4()
       method5()
+      method6()
    }
 
    private def method4() = {
@@ -59,6 +60,16 @@ object Example1 {
       var inc=(x:Int) => x+1
 
       println(inc(5))
+   }
+
+   def method6(): Unit ={
+      println("\nmethod6,科里函数")
+      //柯里转换函数接受多个参数成一条链的函数，每次取一个参数
+      def strcat(s1:String)(s2:String)=s1+s2
+
+      val s1="Hello "
+      val s2="Scala"
+      println("result="+strcat(s1)(s2))
    }
 
 
