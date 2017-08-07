@@ -8,6 +8,20 @@ object Example1 {
    def main(args: Array[String]): Unit = {
       method1()
       method2()
+      method3()
+   }
+
+   def method3() = {
+      def addInt(num1: Int = 5, num2: Int = 4): Int = {
+         num1 + num2
+      }
+
+      println("-----------method has default value--------------")
+      println(addInt()) //9
+      println("then")
+      println(addInt(6)) //10
+      println("then")
+      println(addInt(7, 8)) //15
    }
 
    def method1() = {
@@ -29,5 +43,6 @@ object Example1 {
 
       printStrings("one", "two", "three", "four")
    }
+
 
 }
