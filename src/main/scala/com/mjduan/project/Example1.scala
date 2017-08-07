@@ -5,6 +5,18 @@ package com.mjduan.project
   */
 object Example1 {
 
+   def method7() = {
+      println("\nmethod7")
+      def fact(i:Int,accumulator:Int):Int={
+         if (i<=1) accumulator else fact(i-1,i*accumulator)
+      }
+
+      def factorial(i:Int)= fact(i,1)
+
+      println(factorial(0))
+      println(factorial(3))
+   }
+
    def main(args: Array[String]): Unit = {
       method1()
       method2()
@@ -12,6 +24,7 @@ object Example1 {
       method4()
       method5()
       method6()
+      method7()
    }
 
    private def method4() = {
